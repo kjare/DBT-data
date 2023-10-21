@@ -1,0 +1,13 @@
+ *alter table t2 modify c1 int null;//not null=null
+
+*class assi 2 :select empno, (length(datePresent)-length(replace(datePresent,',',''))+1) as Attendance_in_days from emp_attendance;
+
+*class assi 3 :select candidateID, ((length(replace(response,',',''))) + length(replace(response,'n','')))-length(response) as total_responses from vote_response;
+
+*clss assi 4 (random otp 4 digits): select floor(rand()*10000);
+
+*to desc all tables in one command in the same database :- 
+-SELECT * FROM information_schema.columns WHERE table_schema = 'db_name';
+-SELECT * FROM information_schema.columns WHERE table_schema = 'db_name' ORDER BY TABLE_NAME, ORDINAL_POSITION;
+-SELECT TABLE_NAME, COLUMN_NAME, DATA_TYPE, COLUMN_TYPE, COLUMN_COMMENT, ORDINAL_POSITION FROM information_schema.columns WHERE table_schema = 'db_name' ORDER BY TABLE_NAME, ORDINAL_POSITION;
+-SELECT * FROM information_schema.columns WHERE table_schema != 'information_schema';
